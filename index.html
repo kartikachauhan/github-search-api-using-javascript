@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header class="list__header">
+        <div class="list__header-inner-wrap">
+            <div class="list__header-left">
+                <div class="list__header-button-list">
+                    <h2 class="list__sort-header-card-heading">GITHUB REPOSITORY</h2>
+                </div>
+            </div>
+            <div class="list__header-right">
+                <ul class="list__header-button-list">
+                    <li><a href="#"><h2 class="list__sort-header-card">Contact Us</h2></a></li>
+                    <li><a href="#"><h2 class="list__sort-header-card">About</h2></a></li>
+                    <li><a href="#"><h2 class="list__sort-header-card">Details</h2></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="search">
+        <div class="main-search-container" id="mainSearchContainer">
+            <input type="text" id="search-box" placeholder="Search by Github Id" style="margin-left: 0%;">
+            <span id="clearSearchButton" role="button" tabindex="0"><img alt="clear" src="./close.png"></span>
+            <button class="search__button" type="submit" aria-disabled="false">Search</button>
+        </div>
+    </div>
+    <section class="results-based-on-search fold-oneBytwo">
+        <div class="container fold-oneBytwo-container">
+            <div class="fold-oneBytwo--card fold-oneBytwo--card-one">
+                <a href="#">
+                    <div class="fold-card--details">
+                        <div class="fold-card--details-header">Title</div>
+                        <div class="fold-card--details-text">Publishers running direct-sold campaigns can now offer more high impact formats for increased revenue.</div>
+                        <div class="fold-card--details-support-text">Last Updated: <span class="fold-card--details-support-text">3 min ago</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="fold-oneBytwo--card fold-oneBytwo--card-one">
+                <a href="#">
+                    <div class="fold-card--details">
+                        <div class="fold-card--details-header">Title</div>
+                        <div class="fold-card--details-text">Publishers running direct-sold campaigns can now offer more high impact formats for increased revenue.</div>
+                        <div class="fold-card--details-support-text">Last Updated: <span class="fold-card--details-support-text">3 min ago</span></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
