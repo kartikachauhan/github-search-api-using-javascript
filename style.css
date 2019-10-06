@@ -45,6 +45,7 @@ body{
     border: 1px solid transparent;
     width: 290px;
     padding-left: 13px;
+    outline:none;
 }
 .search__button {
     background: #666;

@@ -1,6 +1,5 @@
 
 $( document ).ready(function() {
-    console.log( "ready!" );
 
     $("#search-box").keyup(function(event){
         var x = event.keyCode;
@@ -12,7 +11,6 @@ $( document ).ready(function() {
             }, 800);
         }
         var value = $('#search-box').val();
-            console.log('inside');
             var repositoryURL = 'https://api.github.com/users/'+value+'/repos';
 
             $.ajax({
@@ -58,10 +56,10 @@ $( document ).ready(function() {
     var cardtext = "";
     
     function createCard(data){
-        console.log(data);
+        cardtext = '';
         for(key in data){
                 cardtext += `<div class="fold-oneBytwo--card fold-oneBytwo--card-one">
-                                <a href="${data[key].url}" target="_blank">
+                                <a href="${data[key].svn_url}" target="_blank">
                                     <div class="fold-card--details">
                                         <div class="fold-card--details-header">${data[key].name}</div>`;
                                         if(data[key].description == null){
